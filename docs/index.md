@@ -1,24 +1,26 @@
-# Module Name
+# Multiply Accumulate
 
-A description of the project
+A four quadrant multipler based on the MC1496.
 
-* Module size: xxHP (yy mm)
+* Module size: 4HP (20 mm)
 * Power: 10mA (+12V); 10mA (-12V)
 
 !!! repository "Project Source"
 
-    The project files, including schematic and layout, are available on [github](https://github.com/xdylanm/modular-template)
+    The project files, including schematic and layout, are available on [github](https://github.com/xdylanm/multiply-accumulate)
 
 ## Features
 
-Highlights go here
+This module implements a multiplier based on the Gilbert cell topology. The design is a combination of the Yusynth version and the datasheet, and includes
 
-* a list is nice
-* and easy to read
+* analog mulitplication of two DC-coupled signals, with one input controlled by an attenuverter 
+* a summing input for the third channel, with an attenuverter to adjust the input level
+
+This combination can function as a balanced modulator, VCA, and mixer. 
 
 ## Documentation
 
-[Theory](theory.md)
+[Design](design.md)
 
 [Assembly Guide](assembly.md)
 
@@ -26,5 +28,5 @@ Highlights go here
 
 ## References
 
-1. Any general references
-2. are listed here
+1. Yves Usson, "Dual balanced modulator (ring modulator)," [yusynth.net](https://yusynth.net/Modular/EN/RINGMOD/index.html)
+2. MC1496 Datasheet, [onsemi.com](https://www.onsemi.com/pdf/datasheet/mc1496-d.pdf)

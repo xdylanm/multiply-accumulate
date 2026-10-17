@@ -1,9 +1,9 @@
 # Assembly Guide
 
-Your assembly instructions go here.
+Apply solder paste with stencil, place SMT components and reflow. Place and soler THT components.
 
 ## BOM
 
-[Download (.csv)](assets/example_bom.csv)
+[Download (.csv)](assets/bom.csv)
 
-{%include-markdown "assets/example_bom.md"%}
+{%include-markdown "assets/bom.md"%}

@@ -1,12 +1,11 @@
-site_name: Module
+site_name: Multiply Accumulate
 site_author: idyllm
-repo_url: https://github.com/xdylanm/modular-template
+repo_url: https://github.com/xdylanm/multiply-accumulate
 
 nav:
   - Home: index.md
-  - Design: theory.md
+  - Design: design.md
   - Assembly: assembly.md
-  - Notebook: notebook.ipynb
   - Schematic: assets/schematic.pdf
 
 theme:

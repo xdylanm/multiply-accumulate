@@ -1,0 +1,24 @@
+.title KiCad schematic
+.param VIDC=0
+Cb1 /Vb 0 100u
+Rcn2 /Vb /Vcn 2.2k
+Rcp2 /Vb /Vcp 2.2k
+Rcp1 VCC /Vcp 10.8k
+Rb1 0 /Vb 1.0k
+Rcn1 VCC /Vcn 10.2k
+Ra1 /Vb VCC 2.2k
+Rin1 /Vi /Vcn 150k
+V1 VCC 0 12
+V2 /Vi 0 DC {VIDC} AC 1
+.control
+*  op
+  dc V2 -10 10 1
+  print v(/Vb) v(/Vcp) v(/Vcn)
+*  print -1/i(V2)
+*  ac dec 50 10 100k
+*  let zin = -1/i(V2)
+*  let zmag = mag(zin)
+*  let zph = 180/pi*ph(zin)
+*  plot zmag vs frequency xlog xlabel '|Zin| (ohm)'
+.endc
+.end
